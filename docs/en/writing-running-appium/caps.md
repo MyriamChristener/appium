@@ -76,7 +76,7 @@ These Capabilities are available only on Android-based drivers (like
 |`systemPort` | `systemPort` used to connect to [appium-uiautomator2-server](https://github.com/appium/appium-uiautomator2-server) or [appium-espresso-driver](https://github.com/appium/appium-espresso-driver). The default is `8200` in general and selects one port from `8200` to `8299` for _appium-uiautomator2-server_, it is `8300` from `8300` to `8399` for _appium-espresso-driver_. When you run tests in parallel, you must adjust the port to avoid conflicts. Read [Parallel Testing Setup Guide](https://github.com/appium/appium/blob/master/docs/en/advanced-concepts/parallel-tests.md#parallel-android-tests) for more details. | e.g., `8201` |
 |`remoteAdbHost`|Optional remote ADB server host|e.g.: 192.168.0.101|
 |`androidDeviceSocket`|Devtools socket name. Needed only when tested app is a Chromium embedding browser. The socket is open by the browser and Chromedriver connects to it as a devtools client.|e.g., `chrome_devtools_remote`|
-|`avd`| Name of avd to launch|e.g., `api19`|
+|`avd`| Name of avd to launch|e.g., ``api19`|
 |`avdLaunchTimeout`| How long to wait in milliseconds for an avd to launch and connect to ADB (default `60000`)| `300000`|
 |`avdReadyTimeout`| How long to wait in milliseconds for an avd to finish its boot animations (default `120000`)| `300000`|
 |`avdArgs`| Additional emulator arguments used when launching an avd|e.g., `-netfast`|
